@@ -6,6 +6,7 @@
     <title>MasterCellPhone</title>
     <link rel="stylesheet" href="/styles.css" />
   </head>
+
   <body>
     <header class="header">
       <div class="brand">
@@ -16,45 +17,88 @@
         </div>
       </div>
     </header>
+
     <main class="container">
+
+      <!-- HERO -->
       <section class="hero">
         <h2>Solicite serviços avançados e microsoldagem</h2>
         <p>Selecione os serviços desejados e envie sua solicitação pelo WhatsApp.</p>
-        <a href="https://wa.me/5561992505987" target="_blank" rel="noopener" class="btn" style="display:inline-block;text-decoration:none;margin-top:8px">Falar no WhatsApp</a>
+
+        <a 
+          href="https://wa.me/5561992505987"
+          target="_blank"
+          rel="noopener"
+          class="btn"
+          style="display:inline-block;margin-top:8px"
+        >
+          Falar no WhatsApp
+        </a>
       </section>
 
+      <!-- AÇÕES / BUSCA -->
       <section class="actions">
-        <input id="search" type="text" placeholder="Buscar serviço" />
+        <input 
+          id="search" 
+          type="text" 
+          placeholder="Buscar serviço"
+        />
+
         <div class="tabs">
           <button class="tab active" data-tab="iphone">iPhone</button>
           <button class="tab" data-tab="android">Android</button>
         </div>
       </section>
 
+      <!-- GRID -->
       <section class="grid">
+
+        <!-- LISTA DE SERVIÇOS -->
         <div class="panel">
           <h3 id="panel-title">Serviços iPhone</h3>
           <ul id="services-list" class="services"></ul>
         </div>
+
+        <!-- FORMULÁRIO -->
         <div class="panel">
           <h3>Seus dados</h3>
+
           <form id="lead-form" class="form">
             <label>
               Nome
-              <input type="text" id="name" placeholder="Seu nome" />
+              <input 
+                type="text" 
+                id="name" 
+                placeholder="Seu nome" 
+              />
             </label>
+
             <label>
               WhatsApp
-              <input type="text" id="phone" placeholder="DDD + número" />
+              <input 
+                type="text" 
+                id="phone" 
+                placeholder="DDD + número"
+              />
             </label>
-            <button type="button" id="submit">Solicitar no WhatsApp</button>
+
+            <button 
+              type="button" 
+              id="submit" 
+              class="btn"
+            >
+              Solicitar no WhatsApp
+            </button>
           </form>
         </div>
+
       </section>
     </main>
+
     <footer class="footer">
       <p>© MasterCellPhone • by GreenMindSys</p>
     </footer>
+
     <script src="/app.js"></script>
   </body>
-  </html>
+</html>
